@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/g1">
+        <item android:title="@string/app_name"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/main"></item>
+    </group>
+    <group android:id="@+id/g2">
+        <item android:title="@string/nav_quick_access"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/quick_access"></item>
+        <item android:title="@string/nav_recent_access"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/recent_access"></item>
+        <item android:title="@string/nav_picture"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/picture"></item>
+        <item android:title="@string/nav_vedio"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/vedio"></item>
+        <item android:title="@string/nav_music"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/music"></item>
+        <item android:title="@string/nav_doc"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/doc"></item>
+        <item android:title="@string/nav_apk"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/apk"></item>
+    </group>
+    <group android:id="@+id/g3">
+        <item android:title="@string/nav_ftp"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/nav_ftp"></item>
+        <item android:title="@string/nav_application"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/nav_application"></item>
+        <item android:title="@string/nav_settings"
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/nav_settings"></item>
+    </group>
+</menu>

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">FileManager</string>
+    <string name="nav_quick_access">快速访问</string>
+    <string name="nav_recent_access">最近访问</string>
+    <string name="nav_picture">图片</string>
+    <string name="nav_vedio">视频</string>
+    <string name="nav_music">音乐</string>
+    <string name="nav_doc">文档</string>
+    <string name="nav_apk">安装包</string>
+    <string name="nav_application">应用管理</string>
+    <string name="nav_ftp">FTP服务器</string>
+    <string name="nav_settings">设置</string>
+
+
 </resources>
