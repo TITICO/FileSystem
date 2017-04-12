@@ -11,6 +11,9 @@
         android:theme="@style/AppTheme"
         android:name=".application.MyApplication">
         <activity android:name=".activitys.MainActivity">
+
+        </activity>
+        <activity android:name=".activitys.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

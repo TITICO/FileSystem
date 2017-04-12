@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:id="@+id/g1">
+    <group android:id="@+id/g1"
+        android:checkableBehavior="single">
         <item android:title="@string/app_name"
             android:icon="@mipmap/ic_launcher"
             android:id="@+id/main"></item>
     </group>
-    <group android:id="@+id/g2">
+    <group android:id="@+id/g2"
+        android:checkableBehavior="single">
         <item android:title="@string/nav_quick_access"
             android:icon="@mipmap/ic_launcher"
             android:id="@+id/quick_access"></item>
@@ -28,7 +30,8 @@
             android:icon="@mipmap/ic_launcher"
             android:id="@+id/apk"></item>
     </group>
-    <group android:id="@+id/g3">
+    <group android:id="@+id/g3"
+        android:checkableBehavior="none">
         <item android:title="@string/nav_ftp"
             android:icon="@mipmap/ic_launcher"
             android:id="@+id/nav_ftp"></item>
