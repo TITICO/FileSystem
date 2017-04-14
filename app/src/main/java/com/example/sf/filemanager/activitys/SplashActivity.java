@@ -27,11 +27,12 @@ public class SplashActivity extends BaseActivity {
     TextView skip;
     private final int TIME = 5;
     private int mTime = TIME;
+    private boolean isSkiped=false;
 
     @Override
     protected void init() {
-        Log.e("init","init");
-        skip.setText("跳过 "+TIME);
+        Log.e("init", "init");
+        skip.setText("跳过 " + TIME);
         countDown();
     }
 
@@ -41,15 +42,18 @@ public class SplashActivity extends BaseActivity {
     }
 
     private void skip() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-        finish();
+        if(!isSkiped) {
+            isSkiped=true;
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+            finish();
+        }
     }
 
     @OnClick(R.id.skip)
     public void onViewClicked() {
-        Log.e("onViewClicked","onViewClicked");
+        Log.e("onViewClicked", "onViewClicked");
         skip();
     }
 
@@ -64,18 +68,17 @@ public class SplashActivity extends BaseActivity {
             public void onNext(Object o) {
                 mTime--;
                 skip.setText("跳过 " + mTime);
-
             }
 
             @Override
             public void onError(Throwable e) {
-                Log.e("onError","");
+                Log.e("onError", "");
                 skip();
             }
 
             @Override
             public void onComplete() {
-                Log.e("onComplete","");
+                Log.e("onComplete", "");
                 skip();
             }
         };
