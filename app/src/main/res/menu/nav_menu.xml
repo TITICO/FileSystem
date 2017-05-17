@@ -4,42 +4,42 @@
         android:checkableBehavior="single">
         <item android:title="@string/app_name"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/main"></item>
+            android:id="@+id/main"/>
     </group>
     <group android:id="@+id/g2"
         android:checkableBehavior="single">
         <item android:title="@string/nav_quick_access"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/quick_access"></item>
+            android:id="@+id/nav_quick_access"/>
         <item android:title="@string/nav_recent_access"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/recent_access"></item>
+            android:id="@+id/nav_recent_access"/>
         <item android:title="@string/nav_picture"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/picture"></item>
+            android:id="@+id/nav_picture"/>
         <item android:title="@string/nav_vedio"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/vedio"></item>
+            android:id="@+id/nav_vedio"/>
         <item android:title="@string/nav_music"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/music"></item>
+            android:id="@+id/nav_music"/>
         <item android:title="@string/nav_doc"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/doc"></item>
+            android:id="@+id/nav_doc"/>
         <item android:title="@string/nav_apk"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/apk"></item>
+            android:id="@+id/nav_apk"/>
     </group>
     <group android:id="@+id/g3"
         android:checkableBehavior="none">
         <item android:title="@string/nav_ftp"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/nav_ftp"></item>
+            android:id="@+id/nav_ftp"/>
         <item android:title="@string/nav_application"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/nav_application"></item>
+            android:id="@+id/nav_application"/>
         <item android:title="@string/nav_settings"
             android:icon="@mipmap/ic_launcher"
-            android:id="@+id/nav_settings"></item>
+            android:id="@+id/nav_settings"/>
     </group>
 </menu>

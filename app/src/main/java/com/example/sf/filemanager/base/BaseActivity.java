@@ -2,6 +2,9 @@ package com.example.sf.filemanager.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
@@ -12,6 +15,8 @@ import butterknife.ButterKnife;
  */
 
 public abstract class BaseActivity extends RxAppCompatActivity{
+    public static String accentSkin;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +28,13 @@ public abstract class BaseActivity extends RxAppCompatActivity{
     protected abstract void init();
 
     protected abstract int getLayoutId();
+
+    protected void replaceFragment(int containerId, Fragment fragment,String tag){
+        FragmentManager fm=this.getSupportFragmentManager();
+        FragmentTransaction ft=fm.beginTransaction();
+        ft.replace(containerId,fragment,tag);
+        ft.commit();
+    }
 
     @Override
     public void overridePendingTransition(int enterAnim, int exitAnim) {
