@@ -1,6 +1,6 @@
 package com.example.sf.filemanager.entity;
 
-import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -14,9 +14,9 @@ import java.util.Calendar;
 
 public class LayoutElement implements Parcelable {
     private static final String CURRENT_YEAR = String.valueOf(Calendar.getInstance().get(Calendar.YEAR));
-    public LayoutElement(BitmapDrawable bitmapDrawable, String title, String des, String permissions,
+    public LayoutElement(Drawable bitmapDrawable, String title, String des, String permissions,
                          String symlink, String size, boolean isDirectory, String date, long longSize,
-                          boolean header) {
+                         boolean header) {
         this.bitmapDrawable = bitmapDrawable;
         this.title = title;
         this.des = des;
@@ -32,7 +32,7 @@ public class LayoutElement implements Parcelable {
         }
     }
 
-    public BitmapDrawable getBitmapDrawable() {
+    public Drawable getBitmapDrawable() {
         return bitmapDrawable;
     }
 
@@ -76,11 +76,11 @@ public class LayoutElement implements Parcelable {
         return header;
     }
 
-    public void setBitmapDrawable(BitmapDrawable bitmapDrawable) {
+    public void setBitmapDrawable(Drawable bitmapDrawable) {
         this.bitmapDrawable = bitmapDrawable;
     }
 
-    private BitmapDrawable bitmapDrawable;
+    private Drawable bitmapDrawable;
     private String title;
     private String des;
     private String permissions;
