@@ -7,7 +7,7 @@
 
     <dimen name="corner_radius">10dp</dimen>
     <dimen name="topMargin">20dp</dimen>
-    <dimen name="app_icon_width">60dp</dimen>
+    <dimen name="app_icon_width">40dp</dimen>
     <dimen name="left_small_margin">8dp</dimen>
     <dimen name="padding_horizontal_normal">15dp</dimen>
 </resources>

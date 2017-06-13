@@ -4,7 +4,9 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingLeft="@dimen/padding_horizontal_normal"
-    android:paddingRight="@dimen/padding_horizontal_normal">
+    android:paddingRight="@dimen/padding_horizontal_normal"
+    android:paddingTop="@dimen/left_small_margin"
+    android:paddingBottom="@dimen/left_small_margin">
 
     <ImageView
         android:id="@+id/icon"
@@ -35,5 +37,6 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:padding="@dimen/left_small_margin"
-        android:text="..." />
+        android:text="..."
+        android:textSize="@dimen/big_text"/>
 </RelativeLayout>

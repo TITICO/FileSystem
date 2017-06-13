@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/app_operation_open"
+        android:id="@+id/app_operation_open"/>
+    <item android:title="@string/app_operation_backup"
+        android:id="@+id/app_operation_backup"/>
+    <item android:title="@string/app_operation_uninstall"
+        android:id="@+id/app_operation_uninstall"/>
+    <item android:title="@string/app_operation_attribute"
+        android:id="@+id/app_operation_attr"/>
+    <item android:title="@string/app_operation_share"
+        android:id="@+id/app_operation_share"/>
+</menu>

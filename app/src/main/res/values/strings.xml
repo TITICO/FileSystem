@@ -22,4 +22,14 @@
     <string name="exit_tip">再按一次退出应用</string>
     <string name="noappfound">启动应用失败</string>
     <string name="appicon">appicon</string>
+    <string name="not_allowed">无法启动</string>
+    <string name="app_backup_succeed">软件备份成功</string>
+    <string name="app_backup_failed">软件备份失败</string>
+
+    <!--app option -->
+    <string name="app_operation_open">打开</string>
+    <string name="app_operation_backup">备份</string>
+    <string name="app_operation_uninstall">卸载</string>
+    <string name="app_operation_attribute">属性</string>
+    <string name="app_operation_share">分享</string>
 </resources>
